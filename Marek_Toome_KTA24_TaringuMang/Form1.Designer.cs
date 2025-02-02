@@ -32,8 +32,8 @@
             this.MT_TeineMangija = new System.Windows.Forms.TextBox();
             this.MT_JukuPunktid = new System.Windows.Forms.TextBox();
             this.MT_PeetriPunktid = new System.Windows.Forms.TextBox();
-            this.MT_PunktideNaitamineJuku = new System.Windows.Forms.Label();
-            this.MT_PunktideNaitaminePeeter = new System.Windows.Forms.Label();
+            this.MT_JukuSumma = new System.Windows.Forms.Label();
+            this.MT_PeeterSumma = new System.Windows.Forms.Label();
             this.MT_Juku1Taring = new System.Windows.Forms.Label();
             this.MT_Juku2Taring = new System.Windows.Forms.Label();
             this.MT_Peeter1Taring = new System.Windows.Forms.Label();
@@ -42,7 +42,7 @@
             this.MT_MangibPeeter = new System.Windows.Forms.Button();
             this.MT_AlustaMangu = new System.Windows.Forms.Button();
             this.MT_Tulemus = new System.Windows.Forms.TextBox();
-            this.MT_TulemusNaitamine = new System.Windows.Forms.Label();
+            this.MT_Voitja = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // MT_EsimeneMangija
@@ -97,25 +97,25 @@
             this.MT_PeetriPunktid.Text = "Punktid";
             this.MT_PeetriPunktid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // MT_PunktideNaitamineJuku
+            // MT_JukuSumma
             // 
-            this.MT_PunktideNaitamineJuku.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.MT_PunktideNaitamineJuku.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.MT_PunktideNaitamineJuku.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.MT_PunktideNaitamineJuku.Location = new System.Drawing.Point(71, 159);
-            this.MT_PunktideNaitamineJuku.Name = "MT_PunktideNaitamineJuku";
-            this.MT_PunktideNaitamineJuku.Size = new System.Drawing.Size(197, 39);
-            this.MT_PunktideNaitamineJuku.TabIndex = 5;
+            this.MT_JukuSumma.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.MT_JukuSumma.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.MT_JukuSumma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.MT_JukuSumma.Location = new System.Drawing.Point(71, 159);
+            this.MT_JukuSumma.Name = "MT_JukuSumma";
+            this.MT_JukuSumma.Size = new System.Drawing.Size(197, 39);
+            this.MT_JukuSumma.TabIndex = 5;
             // 
-            // MT_PunktideNaitaminePeeter
+            // MT_PeeterSumma
             // 
-            this.MT_PunktideNaitaminePeeter.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.MT_PunktideNaitaminePeeter.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.MT_PunktideNaitaminePeeter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.MT_PunktideNaitaminePeeter.Location = new System.Drawing.Point(515, 159);
-            this.MT_PunktideNaitaminePeeter.Name = "MT_PunktideNaitaminePeeter";
-            this.MT_PunktideNaitaminePeeter.Size = new System.Drawing.Size(197, 39);
-            this.MT_PunktideNaitaminePeeter.TabIndex = 6;
+            this.MT_PeeterSumma.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.MT_PeeterSumma.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.MT_PeeterSumma.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.MT_PeeterSumma.Location = new System.Drawing.Point(515, 159);
+            this.MT_PeeterSumma.Name = "MT_PeeterSumma";
+            this.MT_PeeterSumma.Size = new System.Drawing.Size(197, 39);
+            this.MT_PeeterSumma.TabIndex = 6;
             // 
             // MT_Juku1Taring
             // 
@@ -167,6 +167,7 @@
             this.MT_JukuMangib.TabIndex = 11;
             this.MT_JukuMangib.Text = "Mangib Juku";
             this.MT_JukuMangib.UseVisualStyleBackColor = false;
+            this.MT_JukuMangib.Click += new System.EventHandler(this.MT_JukuMangib_Click);
             // 
             // MT_MangibPeeter
             // 
@@ -178,6 +179,7 @@
             this.MT_MangibPeeter.TabIndex = 12;
             this.MT_MangibPeeter.Text = "Mangib Peeter";
             this.MT_MangibPeeter.UseVisualStyleBackColor = false;
+            this.MT_MangibPeeter.Click += new System.EventHandler(this.MT_MangibPeeter_Click);
             // 
             // MT_AlustaMangu
             // 
@@ -190,6 +192,7 @@
             this.MT_AlustaMangu.TabIndex = 13;
             this.MT_AlustaMangu.Text = "Alusta uut mängu";
             this.MT_AlustaMangu.UseVisualStyleBackColor = false;
+            this.MT_AlustaMangu.Click += new System.EventHandler(this.MT_AlustaMangu_Click);
             // 
             // MT_Tulemus
             // 
@@ -204,22 +207,22 @@
             this.MT_Tulemus.Text = "Tulemus";
             this.MT_Tulemus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // MT_TulemusNaitamine
+            // MT_Voitja
             // 
-            this.MT_TulemusNaitamine.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.MT_TulemusNaitamine.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(186)));
-            this.MT_TulemusNaitamine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.MT_TulemusNaitamine.Location = new System.Drawing.Point(296, 377);
-            this.MT_TulemusNaitamine.Name = "MT_TulemusNaitamine";
-            this.MT_TulemusNaitamine.Size = new System.Drawing.Size(197, 39);
-            this.MT_TulemusNaitamine.TabIndex = 15;
+            this.MT_Voitja.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.MT_Voitja.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.MT_Voitja.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.MT_Voitja.Location = new System.Drawing.Point(296, 377);
+            this.MT_Voitja.Name = "MT_Voitja";
+            this.MT_Voitja.Size = new System.Drawing.Size(197, 39);
+            this.MT_Voitja.TabIndex = 15;
             // 
             // MT_Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.MT_TulemusNaitamine);
+            this.Controls.Add(this.MT_Voitja);
             this.Controls.Add(this.MT_Tulemus);
             this.Controls.Add(this.MT_AlustaMangu);
             this.Controls.Add(this.MT_MangibPeeter);
@@ -228,8 +231,8 @@
             this.Controls.Add(this.MT_Peeter1Taring);
             this.Controls.Add(this.MT_Juku2Taring);
             this.Controls.Add(this.MT_Juku1Taring);
-            this.Controls.Add(this.MT_PunktideNaitaminePeeter);
-            this.Controls.Add(this.MT_PunktideNaitamineJuku);
+            this.Controls.Add(this.MT_PeeterSumma);
+            this.Controls.Add(this.MT_JukuSumma);
             this.Controls.Add(this.MT_PeetriPunktid);
             this.Controls.Add(this.MT_JukuPunktid);
             this.Controls.Add(this.MT_TeineMangija);
@@ -247,8 +250,8 @@
         private System.Windows.Forms.TextBox MT_TeineMangija;
         private System.Windows.Forms.TextBox MT_JukuPunktid;
         private System.Windows.Forms.TextBox MT_PeetriPunktid;
-        private System.Windows.Forms.Label MT_PunktideNaitamineJuku;
-        private System.Windows.Forms.Label MT_PunktideNaitaminePeeter;
+        private System.Windows.Forms.Label MT_JukuSumma;
+        private System.Windows.Forms.Label MT_PeeterSumma;
         private System.Windows.Forms.Label MT_Juku1Taring;
         private System.Windows.Forms.Label MT_Juku2Taring;
         private System.Windows.Forms.Label MT_Peeter1Taring;
@@ -257,7 +260,7 @@
         private System.Windows.Forms.Button MT_MangibPeeter;
         private System.Windows.Forms.Button MT_AlustaMangu;
         private System.Windows.Forms.TextBox MT_Tulemus;
-        private System.Windows.Forms.Label MT_TulemusNaitamine;
+        private System.Windows.Forms.Label MT_Voitja;
     }
 }
 
