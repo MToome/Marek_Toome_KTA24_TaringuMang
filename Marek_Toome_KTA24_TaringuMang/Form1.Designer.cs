@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.MT_EsimeneMangija = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.MT_TeineMangija = new System.Windows.Forms.TextBox();
             this.MT_JukuPunktid = new System.Windows.Forms.TextBox();
             this.MT_PeetriPunktid = new System.Windows.Forms.TextBox();
@@ -40,6 +38,11 @@
             this.MT_Juku2Taring = new System.Windows.Forms.Label();
             this.MT_Peeter1Taring = new System.Windows.Forms.Label();
             this.MT_Peeter2Taring = new System.Windows.Forms.Label();
+            this.MT_JukuMangib = new System.Windows.Forms.Button();
+            this.MT_MangibPeeter = new System.Windows.Forms.Button();
+            this.MT_AlustaMangu = new System.Windows.Forms.Button();
+            this.MT_Tulemus = new System.Windows.Forms.TextBox();
+            this.MT_TulemusNaitamine = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // MT_EsimeneMangija
@@ -54,11 +57,6 @@
             this.MT_EsimeneMangija.TabIndex = 0;
             this.MT_EsimeneMangija.Text = "Esimene mängija Juku";
             this.MT_EsimeneMangija.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // MT_TeineMangija
             // 
@@ -159,11 +157,73 @@
             this.MT_Peeter2Taring.Size = new System.Drawing.Size(85, 39);
             this.MT_Peeter2Taring.TabIndex = 10;
             // 
+            // MT_JukuMangib
+            // 
+            this.MT_JukuMangib.BackColor = System.Drawing.Color.DodgerBlue;
+            this.MT_JukuMangib.Font = new System.Drawing.Font("Courier New", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.MT_JukuMangib.Location = new System.Drawing.Point(71, 276);
+            this.MT_JukuMangib.Name = "MT_JukuMangib";
+            this.MT_JukuMangib.Size = new System.Drawing.Size(197, 37);
+            this.MT_JukuMangib.TabIndex = 11;
+            this.MT_JukuMangib.Text = "Mangib Juku";
+            this.MT_JukuMangib.UseVisualStyleBackColor = false;
+            // 
+            // MT_MangibPeeter
+            // 
+            this.MT_MangibPeeter.BackColor = System.Drawing.Color.DodgerBlue;
+            this.MT_MangibPeeter.Font = new System.Drawing.Font("Courier New", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.MT_MangibPeeter.Location = new System.Drawing.Point(515, 276);
+            this.MT_MangibPeeter.Name = "MT_MangibPeeter";
+            this.MT_MangibPeeter.Size = new System.Drawing.Size(197, 37);
+            this.MT_MangibPeeter.TabIndex = 12;
+            this.MT_MangibPeeter.Text = "Mangib Peeter";
+            this.MT_MangibPeeter.UseVisualStyleBackColor = false;
+            // 
+            // MT_AlustaMangu
+            // 
+            this.MT_AlustaMangu.BackColor = System.Drawing.Color.Lime;
+            this.MT_AlustaMangu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.MT_AlustaMangu.Font = new System.Drawing.Font("Courier New", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.MT_AlustaMangu.Location = new System.Drawing.Point(296, 321);
+            this.MT_AlustaMangu.Name = "MT_AlustaMangu";
+            this.MT_AlustaMangu.Size = new System.Drawing.Size(197, 37);
+            this.MT_AlustaMangu.TabIndex = 13;
+            this.MT_AlustaMangu.Text = "Alusta uut mängu";
+            this.MT_AlustaMangu.UseVisualStyleBackColor = false;
+            // 
+            // MT_Tulemus
+            // 
+            this.MT_Tulemus.BackColor = System.Drawing.SystemColors.Control;
+            this.MT_Tulemus.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.MT_Tulemus.Font = new System.Drawing.Font("Courier New", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.MT_Tulemus.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.MT_Tulemus.Location = new System.Drawing.Point(21, 393);
+            this.MT_Tulemus.Name = "MT_Tulemus";
+            this.MT_Tulemus.Size = new System.Drawing.Size(271, 23);
+            this.MT_Tulemus.TabIndex = 14;
+            this.MT_Tulemus.Text = "Tulemus";
+            this.MT_Tulemus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // MT_TulemusNaitamine
+            // 
+            this.MT_TulemusNaitamine.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.MT_TulemusNaitamine.Font = new System.Drawing.Font("Courier New", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(186)));
+            this.MT_TulemusNaitamine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.MT_TulemusNaitamine.Location = new System.Drawing.Point(296, 377);
+            this.MT_TulemusNaitamine.Name = "MT_TulemusNaitamine";
+            this.MT_TulemusNaitamine.Size = new System.Drawing.Size(197, 39);
+            this.MT_TulemusNaitamine.TabIndex = 15;
+            // 
             // MT_Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.MT_TulemusNaitamine);
+            this.Controls.Add(this.MT_Tulemus);
+            this.Controls.Add(this.MT_AlustaMangu);
+            this.Controls.Add(this.MT_MangibPeeter);
+            this.Controls.Add(this.MT_JukuMangib);
             this.Controls.Add(this.MT_Peeter2Taring);
             this.Controls.Add(this.MT_Peeter1Taring);
             this.Controls.Add(this.MT_Juku2Taring);
@@ -184,7 +244,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox MT_EsimeneMangija;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox MT_TeineMangija;
         private System.Windows.Forms.TextBox MT_JukuPunktid;
         private System.Windows.Forms.TextBox MT_PeetriPunktid;
@@ -194,6 +253,11 @@
         private System.Windows.Forms.Label MT_Juku2Taring;
         private System.Windows.Forms.Label MT_Peeter1Taring;
         private System.Windows.Forms.Label MT_Peeter2Taring;
+        private System.Windows.Forms.Button MT_JukuMangib;
+        private System.Windows.Forms.Button MT_MangibPeeter;
+        private System.Windows.Forms.Button MT_AlustaMangu;
+        private System.Windows.Forms.TextBox MT_Tulemus;
+        private System.Windows.Forms.Label MT_TulemusNaitamine;
     }
 }
 
